@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
-<img src="smile face.jpeg" alt="SmileyFace">
-    <body style="background-color:lightgray;">
-<h1><centre>Welcome to my website</centre></h1>
+<head>
+    <title>Your Name - Page Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-<p style="light blue";><centre>with some brain-storming I have decided to make this website about me as a portfolio of work
-for potential employers and for me to have the ability to show off my skills.</centre></p>
-    </body>
+
+
+
+
+    <div id="game-container">
+    <h1>My Simple Game</h1>
+    <button id="start-game">Start Game</button>
+</div>
+<script src="game.js"></script>
+
+
+</body>
 </html>
