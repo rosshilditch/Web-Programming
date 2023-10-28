@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Live News Feed</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="news-feed">
+        <h1>Live News Feed</h1>
+        <ul id="news-list">
+            <!-- News items will be added here dynamically -->
+        </ul>
+    </div>
 
-    <body style="background-color:lightgray;">
-<p> This is the second page of my website which will cover academic acheivements and evidence of work</p>
-<br></br>
-<p> there is a list with urls to my projects which can be viewed freely to gain knowledge
-into my previous skills and knowledge i have gained</p>
-
-
+    <script src="script.js"></script>
+</body>
 </html>
-
