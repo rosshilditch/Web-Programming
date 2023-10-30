@@ -1,6 +1,6 @@
 // Function to fetch and display the news feed
 function fetchNewsFeed() {
-    const rssUrl = 'https://example.com/news/rss'; // Replace with the RSS feed URL of the news website
+    const rssUrl = 'http://feeds.bbci.co.uk/news/world/rss.xml'; // Replace with the RSS feed URL of the news website
 
     fetch(rssUrl)
         .then(response => response.text())
