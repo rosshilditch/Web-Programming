@@ -1,21 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Name - Page Title</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Welcome to Cookie World</title>
+    <style>
+        /* CSS for the welcome animation */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            transition: color 0.5s ease;
+        }
+
+        .welcome-animation {
+            animation: fadeIn 2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Styles for the cookie request form */
+        .cookie-request-form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .cookie-request-form:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #ask-for-cookie {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #ask-for-cookie:hover {
+            background-color: #0056b3;
+        }
+
+        .cookie-request {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
+    <div class="welcome-animation">
+        <h1>Welcome to Cookie World!</h1>
+    </div>
 
+    <div class="cookie-request-form">
+        <h2>Can I Have a Cookie?</h2>
+        <form>
+            <label for="cookie-request">Please give me a cookie:</label>
+            <input type="text" id="cookie-request" name="cookie-request" class="cookie-request">
+            <button type="button" id="ask-for-cookie">Ask for a Cookie</button>
+        </form>
+    </div>
 
+    <script>
+        // JavaScript function to handle the cookie request
+        document.getElementById('ask-for-cookie').addEventListener('click', function() {
+            const request = document.getElementById('cookie-request').value;
 
-
-
-    <div id="game-container">
-    <h1>My Simple Game</h1>
-    <button id="start-game">Start Game</button>
-</div>
-<script src="game.js"></script>
-
-
+            if (request.trim() !== '') {
+                alert(`You asked for a cookie: ${request}`);
+            } else {
+                alert('Please enter your cookie request.');
+            }
+        });
+    </script>
 </body>
 </html>
