@@ -1,10 +1,17 @@
-# Web-Programming
 
-This Project is part of my web programming module and will be updated weekly as the module progresses.
-The aim is to have a fully function and responsive website by the end of the module.
+# My Web Programming Repository
 
-any additional information which I find necessary will be added to this README and may be used to assist the user in using the website.
+Welcome to my personal web programming repository. This README provides an overview of the repository and its contents.
 
-A game has been added as a interactive measure to my website.
+## Repository Description
 
-i will be adding a feed for daily news that will refresh automatically
+This repository is a space for me to work on various web programming projects, experiment with new technologies, and showcase my web development skills. Here's what you'll find in this repository:
+
+- Web applications I'm currently working on.
+- Code snippets, demos, and experiments.
+- Documentation and notes related to web development.
+- Any projects or assignments I'm completing for courses or personal growth.
+
+## Project Structure
+
+This project is mainly to show my use and understanding of github and verison control
