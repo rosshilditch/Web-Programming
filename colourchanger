@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler Example</title>
+    <style>
+        #myElement {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="myElement">Click me!</div>
+
+<script>
+    // JavaScript function to create an event handler
+    function changeColorHandler() {
+        var element = document.getElementById('myElement');
+
+        // Event handler function
+        function handleClick() {
+            // Change the background color of the element
+            element.style.backgroundColor = 'yellow';
+        }
+
+        // Add click event listener to the element
+        element.addEventListener('click', handleClick);
+    }
+
+    // Invoke the function to install the event handler
+    changeColorHandler();
+</script>
+
+</body>
+</html>
