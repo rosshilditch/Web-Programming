@@ -11,24 +11,35 @@
             background-color: lightblue;
             cursor: pointer;
         }
+
+        body {
+            text-align: center;
+        }
+
+        #divContent {
+            font-size: 40px;
+            font-weight: bold;
+            color: green;
+        }
     </style>
+
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
 
 <div id="myElement">Click me!</div>
 
+<!-- Script for the event handler -->
 <script>
-    // JavaScript function to create an event handler
     function changeColorHandler() {
         var element = document.getElementById('myElement');
 
-        // Event handler function
         function handleClick() {
-            // Change the background color of the element
             element.style.backgroundColor = 'lightcoral';
         }
 
-        // Add click event listener to the element
         element.addEventListener('click', handleClick);
     }
 
@@ -36,5 +47,25 @@
     changeColorHandler();
 </script>
 
+<!-- jQuery script for loading content from a different URL -->
+<script>
+    $(document).ready(function(){
+        // Click event on button
+        $("button").click(function(){
+            // Load content from GitHub API and replace the default content
+            $("#divContent").load("https://api.github.com/repositories/2126244/commits?per_page=1");
+        });
+    });
+</script>
+
+<!-- Button to trigger the jQuery event -->
+<button>Load GitHub Commits</button>
+
+<!-- Container for the loaded content -->
+<div id="divContent">
+    Default Content
+</div>
+
 </body>
 </html>
+
